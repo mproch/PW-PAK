@@ -18,7 +18,7 @@ public class CounterServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         counter.inc();
         ServletOutputStream response = resp.getOutputStream();
-        response.print(counter.getCounter());
+        response.print(String.format("counter = %d", counter.getCounter()));
         response.close();
     }
 }
