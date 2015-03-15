@@ -1,8 +1,8 @@
 package pl.touk;
 
-import static junit.framework.Assert.assertEquals;
-
 import org.junit.Test;
+
+import static junit.framework.Assert.assertEquals;
 
 
 public class CounterTest {
@@ -22,7 +22,7 @@ public class CounterTest {
         counter.inc();
         counter.inc();
 
-        assertEquals(2, counter.getCounter());
+        assertEquals(5, counter.getCounter());
     }
 
 }
